@@ -11,6 +11,7 @@
 
 * {
   margin: 0;
+  font-family: "Playfair Display", serif;
 }
 
 @media (prefers-reduced-motion: no-preference) {
