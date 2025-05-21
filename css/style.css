@@ -188,6 +188,11 @@ main {
   color: #ffffff;
   font-size: 2rem;
   text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project .screenshot p:hover {
+    transform: scale(1.06);
 }
 
 .project .description {
@@ -233,11 +238,13 @@ main h2 {
 footer {
   padding: 50px;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer p {
     font-size: 1.2rem;
-    width: 40%;
+    max-width: 500px;
 }
 
 footer .info {
@@ -247,4 +254,16 @@ footer .info {
 
 footer .address {
     margin-bottom: 30px;
+}
+
+footer .text {
+    margin-right: 20px;
+}
+
+.footer-image {
+    background: url("../img/dog-footer.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 500px;
 }
