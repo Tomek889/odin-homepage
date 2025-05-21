@@ -125,20 +125,126 @@ h1 {
   position: relative;
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+
 .card h2 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .icons {
-    color: #000000;
-    display: flex;
-    gap: 15px;
-    position: absolute;
-    bottom: 45px;
-    right: 50px;
+  color: #000000;
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 45px;
+  right: 50px;
 }
 
 .icons img {
-    height: 26px;
+  height: 26px;
+  width: 26px;
+}
+
+main {
+  background-color: #ffffff;
+  padding: 60px;
+}
+
+.project .screenshot {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects:nth-child(1) .screenshot {
+  background-color: #912924;
+}
+
+.project:nth-child(2) .screenshot {
+  background-color: #7b75c4;
+}
+
+.project:nth-child(3) .screenshot {
+  background-color: #698e54;
+}
+
+.project:nth-child(4) .screenshot {
+  background-color: #b768b0;
+}
+
+.project:nth-child(5) .screenshot {
+  background-color: #cd924a;
+}
+
+.project:nth-child(6) .screenshot {
+  background-color: #62a0ce;
+}
+
+.project .screenshot p {
+  padding: 30px;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.project .description {
+  height: 150px;
+  padding: 8px 16px;
+  box-shadow: -6px 0 8px rgba(0, 0, 0, 0.1), 6px 0 8px rgba(0, 0, 0, 0.1),
+    0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+  margin-bottom: 30px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-project img,
+.links-project svg {
+  height: 18px;
+  width: 18px;
+}
+
+.links-project {
+  display: flex;
+  gap: 15px;
+}
+
+.project-bottom {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #0f0f0f;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px;
+}
+
+footer {
+  padding: 50px;
+  color: #ffffff;
+}
+
+footer p {
+    font-size: 1.2rem;
+    width: 40%;
+}
+
+footer .info {
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+footer .address {
+    margin-bottom: 30px;
 }
