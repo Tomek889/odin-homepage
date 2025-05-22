@@ -118,7 +118,7 @@ h1 {
 
 .card {
   width: 600px;
-  height: 450px;
+  min-height: 450px;
   background-color: #ffffff;
   padding: 30px;
   box-shadow: 2px 2px 8px #8a8a8a;
@@ -279,11 +279,12 @@ footer .text {
   gap: 10px;
 }
 
-.phone svg, .email svg {
-    height: 26px;
-    width: 26px;
-    fill: #ffffff;
-
+.phone svg,
+.email svg {
+  height: 26px;
+  width: 26px;
+  fill: #ffffff;
+  overflow: visible;
 }
 
 .icons-footer {
@@ -296,4 +297,159 @@ footer .text {
 .icons-footer img {
   height: 26px;
   width: 26px;
+}
+
+@media (min-width: 781px) and (max-width: 1160px) {
+  .icons {
+    display: none;
+  }
+
+  .content {
+    display: block;
+  }
+
+  h1 {
+    /* top: 10%;
+    left: 400px; */
+    z-index: 2;
+    white-space: nowrap;
+  }
+
+  .card {
+    height: 550px;
+    width: 800px;
+    overflow: visible;
+    transform: translate(0, 300px);
+  }
+
+  .card h2 {
+    text-align: center;
+  }
+
+  .header-image {
+    z-index: 2;
+    float: left;
+  }
+}
+
+@media (max-width: 780px) {
+  .content {
+    display: block;
+  }
+
+  .header-image {
+    margin: 60px auto;
+    width: 80vw;
+  }
+
+  .card {
+    box-shadow: none;
+    width: 100vw;
+    position: relative;
+  }
+
+  .icons {
+    position: initial;
+  }
+
+  main {
+    width: 100vw;
+    padding: 0;
+  }
+
+  .projects {
+    display: block;
+  }
+
+  .project {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .project:last-child {
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  footer h2 {
+    margin-bottom: 30px;
+  }
+
+  footer .text {
+    padding: 50px;
+  }
+
+  footer {
+    display: block;
+    padding: 0;
+  }
+
+  .footer-image {
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h1 span {
+    display: block;
+  }
+
+  .icons {
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .icons-footer {
+    margin: 0 auto;
+  }
+
+  .icons-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons-footer {
+    margin-top: 40px;
+  }
+
+  .icons img,
+  .icons-footer img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .background {
+    margin-top: -500px;
+  }
+
+  .head p {
+    font-size: 1.6rem;
+  }
+
+  .head img,
+  .head svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .email svg, .phone svg {
+    display: none;
+  }
+  p, footer p {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 365px) {
+  h1 {
+    font-size: 2.6rem;
+  }
 }
