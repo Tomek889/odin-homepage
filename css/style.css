@@ -307,6 +307,7 @@ footer .text {
   .content {
     display: block;
     padding-top: 50px;
+    margin-top: 200px;
   }
 
   .content-wrapper {
@@ -328,8 +329,11 @@ footer .text {
   .card {
     min-height: 460px;
     width: 760px;
-    overflow: visible;
-    transform: translate(30px, 150px);
+  }
+
+  .card p {
+    margin-right: 20px;
+    transform: translate(20px, 10px);
   }
 
   .card h2 {
@@ -341,6 +345,8 @@ footer .text {
     float: left;
     height: 500px;
     width: 400px;
+    margin-top: -135px;
+    margin-left: -30px;
   }
 }
 
